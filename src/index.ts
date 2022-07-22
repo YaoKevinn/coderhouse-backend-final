@@ -92,12 +92,12 @@ if (args.modo && args.modo === 'cluster') {
             cluster.fork();
         });
     } else {
-        httpServer.listen(args.port, async () => {
+        httpServer.listen(port, async () => {
             console.log(`CLUSTER MODE: Ecommerce server initialized on port ${port}...`);
         });
     }   
 } else {
-    httpServer.listen(args.port, async () => {
+    httpServer.listen(port, async () => {
         console.log(`FORK MODE: Ecommerce server initialized with ${persistance} on port ${port}...`);
     });
 }
