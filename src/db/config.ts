@@ -1,9 +1,8 @@
-import { ConnectOptions } from 'mongoose';
 import MongoStore from 'connect-mongo';
 import admin from 'firebase-admin';
+import { config } from '../db/firebase-config';
 import 'dotenv/config'
 
-var config = require('../db/firebase-key.json');
 let serviceAccount = config;
 
 
